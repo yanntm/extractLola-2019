@@ -8,7 +8,7 @@ cd website
 
 # grab the vmdk file image for all inputs
 mkdir Lola
-wget --progress=dot:mega https://mcc.lip6.fr/2019/archives/lola2019.vmdk.tar.bz2
+wget --no-check-certificate --progress=dot:mega https://mcc.lip6.fr/2019/archives/lola2019.vmdk.tar.bz2
 tar xvjf lola2019.vmdk.tar.bz2
 ../7z e lola2019.vmdk
 ../ext2rd 0.img ./:Lola
